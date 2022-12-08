@@ -4,31 +4,31 @@ import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 
 const menuitems = [
+  // {
+  //   title: "Features",
+  //   path: "#",
+  //   children: [
+  //     { title: "Action", path: "#" },
+  //     { title: "Another action", path: "#" },
+  //     { title: "Dropdown Submenu", path: "#" },
+  //   ],
+  // },
+  // {
+  //   title: "Pricing",
+  //   path: "/pricing",
+  // },
   {
-    title: "Features",
-    path: "#",
-    children: [
-      { title: "Action", path: "#" },
-      { title: "Another action", path: "#" },
-      { title: "Dropdown Submenu", path: "#" },
-    ],
+    title: "ISO Fuel Spec Checker",
+    path: "/spec-checker",
   },
-  {
-    title: "Pricing",
-    path: "/pricing",
-  },
-  {
-    title: "About",
-    path: "/about",
-  },
-  {
-    title: "Blog",
-    path: "/blog",
-  },
-  {
-    title: "Contact",
-    path: "/contact",
-  },
+  // {
+  //   title: "Blog",
+  //   path: "/blog",
+  // },
+  // {
+  //   title: "Contact",
+  //   path: "/contact",
+  // },
 ];
 ---
 
@@ -96,16 +96,16 @@ const menuitems = [
           ))
         }
       </ul>
-      <div class="lg:hidden flex items-center mt-3 gap-4">
+      <!-- <div class="lg:hidden flex items-center mt-3 gap-4">
         <Link href="#" style="muted" block size="md">Log in</Link>
         <Link href="#" size="md" block>Sign up</Link>
-      </div>
+      </div> -->
     </nav>
     <div>
-      <div class="hidden lg:flex items-center gap-4">
+      <!-- <div class="hidden lg:flex items-center gap-4">
         <a href="#">Log in</a>
         <Link href="#" size="md">Sign up</Link>
-      </div>
+      </div> -->
     </div>
   </header>
 </Container>
