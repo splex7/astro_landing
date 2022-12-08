@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
+import {TabContext} from '@mui/lab';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import SpecTable from './SpecTable';
