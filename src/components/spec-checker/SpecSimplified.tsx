@@ -2,8 +2,6 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
 import Typography from '@mui/material/Typography';
 import { ResTable2005, ResTable201720122010, DistTable201220102005, DistTable2017, DistData2005, 
   DistData20122010, DistData2017, ResData2005, ResData201720122010} from './SpecData';
