@@ -86,7 +86,7 @@ export const ResData2005: Array<ResidualData2005> = [
   {id: 9, Parameter: 'Pour point (upper) in Winter', Unit: '°C', Limit: 'Max.', RMA30: '0', RMB30: '24', RMD80: '30', RME180: '30' ,RMF180: '30', RMG380: '30', RMH380: '30', RMK380: '30', RMH700: '30', RMK700: '30'},
   {id: 10, Parameter: 'Flash point', Unit: '°C', Limit: 'Max.', RMA30: '60.0', RMB30: '60.0', RMD80: '60.0', RME180: '60.0' ,RMF180: '60.0', RMG380: '60.0', RMH380: '60.0', RMK380: '60.0', RMH700: '60.0', RMK700: '60.0'},
   {id: 11, Parameter: 'Sulphur', Unit: '% m/m', Limit: 'Min.', RMA30: '3.5', RMB30: '3.5', RMD80: '4.0', RME180: '4.5' ,RMF180: '4.5', RMG380: '4.5', RMH380: '4.5', RMK380: '4.5', RMH700: '4.5', RMK700: '4.5'},
-  {id: 12, Parameter: 'Total Sediment, Potential', Unit: '(% m/m', Limit: 'Max.', RMA30: '0.10', RMB30: '0.10', RMD80: '0.10', RME180: '0.10' ,RMF180: '0.10', RMG380: '0.10', RMH380: '0.10', RMK380: '0.10', RMH700: '0.10', RMK700: '0.10'},
+  {id: 12, Parameter: 'Total Sediment, Potential', Unit: '% m/m', Limit: 'Max.', RMA30: '0.10', RMB30: '0.10', RMD80: '0.10', RME180: '0.10' ,RMF180: '0.10', RMG380: '0.10', RMH380: '0.10', RMK380: '0.10', RMH700: '0.10', RMK700: '0.10'},
   {id: 13, Parameter: 'Zinc', Unit: 'mg/kg', Limit: 'Max.', RMA30: '15', RMB30: '15', RMD80: '15', RME180: '15' ,RMF180: '15', RMG380: '15', RMH380: '15', RMK380: '15', RMH700: '15', RMK700: '15'},
   {id: 14, Parameter: 'Phosphorus', Unit: 'mg/kg', Limit: 'Max.', RMA30: '15', RMB30: '15', RMD80: '15', RME180: '15' ,RMF180: '15', RMG380: '15', RMH380: '15', RMK380: '15', RMH700: '15', RMK700: '15'},
   {id: 15, Parameter: 'Calcium', Unit: 'mg/kg', Limit: 'Max.', RMA30: '30', RMB30: '30', RMD80: '30', RME180: '30' ,RMF180: '30', RMG380: '30', RMH380: '30', RMK380: '30', RMH700: '30', RMK700: '30'},
@@ -108,8 +108,8 @@ export const ResData201720122010: Array<ResidualData201720122010> = [
   {id: 13, Parameter: 'Sulphur', Unit: '% m/m', Limit: 'Min.', RMA10: '*', RMB30: '*', RMD80: '*', RME180: '*' ,RMG180: '*', RMG380: '*', RMG500: '*', RMG700: '*', RMK380: '*', RMK500: '*', RMK700: '*'},
   {id: 14, Parameter: 'Total Sediment, aged', Unit: '% m/m', Limit: 'Max.', RMA10: '0.10', RMB30: '0.10', RMD80: '0.10', RME180: '0.10' ,RMG180: '0.10', RMG380: '0.10', RMG500: '0.10', RMG700: '0.10', RMK380: '0.10', RMK500: '0.10', RMK700: '0.10'},
   {id: 15, Parameter: 'Acid Number', Unit: 'mgKOH/g', Limit: 'Max.', RMA10: '2.5', RMB30: '2.5', RMD80: '2.5', RME180: '2.5' ,RMG180: '2.5', RMG380: '2.5', RMG500: '2.5', RMG700: '2.5', RMK380: '2.5', RMK500: '2.5', RMK700: '2.5'},
-  {id: 16, Parameter: 'Used lubricating oils (ULO)', Unit: 'mg/kg)', Limit: 'Max.', RMA10: '#', RMB30: '#', RMD80: '#', RME180: '#' ,RMG180: '#', RMG380: '#', RMG500: '#', RMG700: '#', RMK380: '#', RMK500: '#', RMK700: '#'},
-  {id: 17, Parameter: 'Hydrogen sulphide', Unit: 'mg/kg)', Limit: 'Max.', RMA10: '2.00', RMB30: '2.00', RMD80: '2.00', RME180: '2.00' ,RMG180: '2.00', RMG380: '2.00', RMG500: '2.00', RMG700: '2.00', RMK380: '2.00', RMK500: '2.00', RMK700: '2.00'},
+  {id: 16, Parameter: 'Used lubricating oils (ULO)', Unit: 'mg/kg', Limit: 'Max.', RMA10: '#', RMB30: '#', RMD80: '#', RME180: '#' ,RMG180: '#', RMG380: '#', RMG500: '#', RMG700: '#', RMK380: '#', RMK500: '#', RMK700: '#'},
+  {id: 17, Parameter: 'Hydrogen sulphide', Unit: 'mg/kg', Limit: 'Max.', RMA10: '2.00', RMB30: '2.00', RMD80: '2.00', RME180: '2.00' ,RMG180: '2.00', RMG380: '2.00', RMG500: '2.00', RMG700: '2.00', RMK380: '2.00', RMK500: '2.00', RMK700: '2.00'},
 ]
 
 
@@ -280,8 +280,10 @@ return (
         } 
       }
     )
-  } 
-
+  }
+  <div className='pt-4 text-xs'>
+  NeptuneCloud does not assume any responsibility for the correctness of the above information.
+  </div>
 </div>);
 }
 
@@ -306,6 +308,9 @@ return (
       }
     )
   } 
+  <div className='pt-4 text-xs'>
+  NeptuneCloud does not assume any responsibility for the correctness of the above information.
+  </div>
 
 </div>);
 }
@@ -331,7 +336,16 @@ export  function ResTable201720122010( {rows, type}: ResidualProps201720122010) 
         }
       )
     } 
-  
+    <div className='pt-4 text-xs'>
+    <b>*</b>: Comply with statutory requirements as defined by purchaser
+    <br/>
+    <b>#</b>: The fuel shall be free from ULO, and shall be considered to contain ULO
+  when either one of the following conditions is met:
+  Calcium &gt; 30 and zinc &gt; 15; or Calcium &gt; 30 and phosphorus &gt; 15.
+    </div>
+    <div className='pt-4 text-xs'>
+    NeptuneCloud does not assume any responsibility for the correctness of the above information.
+    </div>
   </div>);
   }
   
@@ -355,7 +369,9 @@ export  function ResTable201720122010( {rows, type}: ResidualProps201720122010) 
         }
       )
     } 
-  
+    <div className='pt-4 text-xs'>
+    NeptuneCloud does not assume any responsibility for the correctness of the above information.
+    </div>
   </div>);
   }
   
