@@ -1,5 +1,4 @@
-import { Box } from '@mui/material';
-// import Grid from '@mui/material/Unstable_Grid2';
+import { Box, Grid } from '@mui/material';
 import type { GridColDef } from '@mui/x-data-grid';
 
 export const DistData2017: Array<DistillateData2017> = [
@@ -292,9 +291,9 @@ return (
   <div className='mx-auto'  style={{maxWidth: 800, padding: '50px 10px', fontSize: 13}}>
   <b><Box sx={{ borderBottom: 1, borderColor: 'contrast'}}>
     <div className = "p-1">
-      {/* <Grid container spacing={2}>
+      <Grid container spacing={2}>
         <Grid xs={6}>Parameter</Grid><Grid xs={2}>Limit</Grid><Grid xs={2}><b>Value</b></Grid><Grid xs={2}>Unit</Grid>
-      </Grid>  */}
+      </Grid> 
     </div>
   </Box></b>
   {
@@ -317,9 +316,9 @@ export  function ResTable201720122010( {rows, type}: ResidualProps201720122010) 
    <div className='mx-auto'  style={{maxWidth: 800, padding: '50px 10px', fontSize: 13}}>
    <b><Box sx={{ borderBottom: 1, borderColor: 'contrast'}}>
       <div className = "p-1">
-        {/* <Grid container spacing={2}>
+        <Grid container spacing={2}>
           <Grid xs={6}>Parameter</Grid><Grid xs={2}>Limit</Grid><Grid xs={2}><b>Value</b></Grid><Grid xs={2}>Unit</Grid>
-        </Grid>  */}
+        </Grid> 
       </div>
     </Box></b>
     {
@@ -341,9 +340,9 @@ export  function ResTable201720122010( {rows, type}: ResidualProps201720122010) 
     <div className='mx-auto'  style={{maxWidth: 800, padding: '50px 10px', fontSize: 13}}>
     <b><Box sx={{ borderBottom: 1, borderColor: 'contrast'}}>
       <div className = "p-1">
-        {/* <Grid container spacing={2}>
+        <Grid container spacing={2}>
           <Grid xs={6}>Parameter</Grid><Grid xs={2}>Limit</Grid><Grid xs={2}><b>Value</b></Grid><Grid xs={2}>Unit</Grid>
-        </Grid>  */}
+        </Grid> 
       </div>
     </Box></b>
     {
@@ -364,9 +363,8 @@ function SpecRow(row: {parameter:string, limit:string, value:string, unit:string
 return (
 <Box sx={{ borderBottom: 1, borderColor: 'divider'}}>
 <div className = "p-1">
-{/* <Grid container spacing={2}>
+<Grid container spacing={2}>
   <Grid xs={6}>{row.parameter}</Grid><Grid xs={2}>{row.limit}</Grid><Grid xs={2}><b>{row.value}</b></Grid><Grid xs={2}>{row.unit}</Grid>
-  </Grid>  */}
-  </div></Box>
+  </Grid> </div></Box>
   );
 }
