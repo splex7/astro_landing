@@ -1,10 +1,10 @@
 import * as React from 'react';
 import {Box, Tab, Tabs, createTheme, PaletteMode, Fab, CssBaseline} from '@mui/material';
-// import SpecTable from './SpecTable';
-// import SpecSimplified from './SpecSimplified';
+import SpecTable from './SpecTable';
+import SpecSimplified from './SpecSimplified';
 import { ThemeProvider } from '@mui/material/styles';
-import Brightness4Icon from '@mui/icons-material/Brightness4';
-import Brightness7Icon from '@mui/icons-material/Brightness7';
+// import Brightness4Icon from '@mui/icons-material/Brightness4';
+// import Brightness7Icon from '@mui/icons-material/Brightness7';
 import {TabPanel, a11yProps} from './TabTools';
 
 // Theme definition
@@ -95,14 +95,14 @@ export default function SpecChecker() {
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
-            {/* <SpecSimplified /> */}
+            <SpecSimplified />
         </TabPanel>
         <TabPanel value={value} index={1}>
-            {/* <SpecTable /> */}
+            <SpecTable />
         </TabPanel>
-      <Fab color="primary" size="small"  aria-label="add" sx={{position:'absolute', right: '2%', top: '2%'}} onClick={colorMode.toggleColorMode} >
+      {/* <Fab color="primary" size="small"  aria-label="add" sx={{position:'absolute', right: '2%', top: '2%'}} onClick={colorMode.toggleColorMode} >
         {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
-      </Fab>
+      </Fab> */}
     </div>
     </ThemeProvider>
   );
