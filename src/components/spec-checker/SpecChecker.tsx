@@ -95,7 +95,7 @@ export default function SpecChecker() {
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
-            <SpecSimplified />
+            {/* <SpecSimplified /> */}
         </TabPanel>
         <TabPanel value={value} index={1}>
             <SpecTable />
