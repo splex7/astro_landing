@@ -1,8 +1,6 @@
 import * as React from 'react';
 import Tab from '@mui/material/Tab';
-import {TabContext} from '@mui/lab';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
+import Tabs from '@mui/material/Tabs';
 import SpecTable from './SpecTable';
 import SpecSimplified from './SpecSimplified';
 import type { PaletteMode } from '@mui/material';
@@ -13,6 +11,7 @@ import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import IconButton from '@mui/material/IconButton';
 import Fab from '@mui/material/Fab';
+import {TabPanel, a11yProps} from './TabTools';
 
 // Theme definition
 const getDesignTokens = (mode: PaletteMode) => ({
@@ -81,8 +80,8 @@ export default function SpecChecker() {
   );
 
   // Handle tab changes
-  const [value, setValue] = React.useState('1');
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+  const [value, setValue] = React.useState(0);
+  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
 
@@ -95,20 +94,18 @@ export default function SpecChecker() {
 
 		<div className="mx-auto font-extrabold text-3xl md:text-5xl pt-5" ><center>ISO Bunker Fuel Specification Checker</center></div> 
     <div className='mx-auto'  style={{maxWidth: 1120, paddingTop: 30}}>
-      <TabContext value={value}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-          <TabList onChange={handleChange} aria-label="lab API tabs example">
-            <Tab label="Simplified" value="1" />
-            <Tab label="Full Table" value="2" />
-          </TabList>
+          <Tabs  value={value} onChange={handleChange} aria-label="lab API tabs example">
+            <Tab label="Simplified" {...a11yProps(0)} />
+            <Tab label="Full Table" {...a11yProps(1)} />
+          </Tabs>
         </Box>
-        <TabPanel value="1" sx={{padding: 0,}}>
+        <TabPanel value={value} index={0}>
             <SpecSimplified />
         </TabPanel>
-        <TabPanel value="2" sx={{padding: 0,}}>
+        <TabPanel value={value} index={1}>
             <SpecTable />
         </TabPanel>
-      </TabContext>
       <Fab color="primary" size="small"  aria-label="add" sx={{position:'absolute', right: '2%', top: '2%'}} onClick={colorMode.toggleColorMode} >
         {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
       </Fab>
