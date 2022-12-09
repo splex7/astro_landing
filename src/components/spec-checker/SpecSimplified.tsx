@@ -9,7 +9,7 @@ import {TabPanel, a11yProps} from './TabTools';
 export default function SpecSimplified() {
   const [ISOTab, setISOTab] = React.useState<number>(0);
   const [TypeTab, setTypeTab] = React.useState<number>(0);
-  const [DistResTab, setDistResTab] = React.useState<number>(0);  
+  const [DistResTab, setDistResTab] = React.useState<number>(1);  
    
   const handleChangeISO = (event: React.SyntheticEvent, newValue: number) => {
     setISOTab(newValue);
