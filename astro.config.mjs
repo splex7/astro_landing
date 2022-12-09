@@ -16,7 +16,10 @@ import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
+import image from "@astrojs/image";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://blog.nptn.io",
-  integrations: [tailwind(), alpinejs(), mdx(), sitemap(), react()],
+  integrations: [tailwind(), alpinejs(), mdx(), sitemap(), react(), image()]
 });
