@@ -19,5 +19,4 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://blog.nptn.io",
   integrations: [tailwind(), alpinejs(), mdx(), sitemap(), react()],
-  output: "server",
 });
