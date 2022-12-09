@@ -7,9 +7,6 @@ import tailwind from "@astrojs/tailwind";
 import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
-import image from "@astrojs/image";
-
-// https://astro.build/config
 import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
@@ -24,7 +21,7 @@ import netlify from "@astrojs/netlify/functions";
 // https://astro.build/config
 export default defineConfig({
   site: "https://blog.nptn.io",
-  integrations: [tailwind(), alpinejs(), image(), mdx(), sitemap(), react()],
+  integrations: [tailwind(), alpinejs(), mdx(), sitemap(), react()],
   output: "server",
   adapter: netlify()
 });
