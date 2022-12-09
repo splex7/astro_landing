@@ -1,5 +1,4 @@
-import Box from '@mui/material/Box';
-import {Grid} from '@mui/material';
+import { Grid, Box } from '@mui/material';
 import type { GridColDef } from '@mui/x-data-grid';
 
 export const DistData2017: Array<DistillateData2017> = [

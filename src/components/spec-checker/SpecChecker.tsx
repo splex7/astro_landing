@@ -1,16 +1,10 @@
 import * as React from 'react';
-import Tab from '@mui/material/Tab';
-import Tabs from '@mui/material/Tabs';
+import {Box, Tab, Tabs, createTheme, PaletteMode, Fab, CssBaseline} from '@mui/material';
 import SpecTable from './SpecTable';
 import SpecSimplified from './SpecSimplified';
-import type { PaletteMode } from '@mui/material';
-import { createTheme, Box } from '@mui/material';
-import { ThemeProvider, useTheme} from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider } from '@mui/material/styles';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
-import IconButton from '@mui/material/IconButton';
-import Fab from '@mui/material/Fab';
 import {TabPanel, a11yProps} from './TabTools';
 
 // Theme definition
