@@ -44,11 +44,6 @@ const makeTitle = title
       title={makeTitle}
       description="Sealion is Commodity Trading B2B SaaS."
       canonical={canonicalURL}
-      twitter={{
-        creator: "@surjithctly",
-        site: "@web3templates",
-        card: "summary_large_image",
-      }}
       openGraph={{
         basic: {
           url: canonicalURL,
@@ -62,16 +57,20 @@ const makeTitle = title
       }}
     />
   </head>
-  <body>
-    <Navbar />
-    <slot />
-    <Footer />
+  <!--set body tag bg color blue 1f2937 -->
+
+
+  <body >
+    
+      <Navbar />
+      <slot />
+      <Footer />
+
     <style is:global>
       /* Improve Page speed */
       /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
       img {
-        content-visibility: auto;
-      }
+        content-visibility: visible;      }
       /* Avoid Alpine.js Hidden Element Flash */
       [x-cloak] {
         display: none;

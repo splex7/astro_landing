@@ -4,28 +4,28 @@ import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 
 const menuitems = [
-  // {
-  //   title: "Features",
-  //   path: "#",
-  //   children: [
-  //     { title: "Action", path: "#" },
-  //     { title: "Another action", path: "#" },
-  //     { title: "Dropdown Submenu", path: "#" },
-  //   ],
-  // },
+  {
+    title: "Services",
+    path: "#",
+    children: [
+      { title: "ISO 8217 Fuel Specification", path: "/spec-checker", },
+      { title: "Inquiry Converter", path: "https://n2orca.netlify.app" },
+      // { title: "Platts Holiday Calendar ", path: "/calendar" },
+    ],
+  },
   // {
   //   title: "Pricing",
   //   path: "/pricing",
   // },
-  {
-    title: "ISO Fuel Spec Checker",
-    path: "/spec-checker",
-  },
-  {
-    title: "Inquiry Collector",
-    // path: "/inquiry-collector",
-    path: "https://n2orca.netlify.app",
-  },
+  // {
+  //   title: "ISO 8217 Fuel Specification",
+  //   path: "/spec-checker",
+  // },
+  // {
+  //   title: "Inquiry Converter",
+  //   // path: "/inquiry-collector",
+  //   path: "https://n2orca.netlify.app",
+  // },
   {
     title: "Calendar",
     path: "/calendar",
@@ -80,7 +80,7 @@ const menuitems = [
       class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0"
       :class="{ 'block': open, 'hidden': !open }"
       x-transition>
-      <ul class="flex flex-col lg:flex-row lg:gap-3">
+      <ul class="flex flex-col lg:flex-row lg:gap-10">
         {
           menuitems.map((item, index) => (
             <>
