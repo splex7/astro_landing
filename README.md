@@ -6,7 +6,7 @@ This Free Template is sponsored by [Web3Templates](https://web3templates.com)
 
 ## Live Demo
 
-### [https://astroship.web3templates.com/](https://astroship.web3templates.com/)
+### [https://app.nptn.io/](https://app.nptn.io/)
 
 ### [Download Astroship Template](https://web3templates.com/templates/astroship-starter-website-template-for-astro)
 
