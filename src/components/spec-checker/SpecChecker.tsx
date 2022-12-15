@@ -85,7 +85,7 @@ export default function SpecChecker() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-		<div className="mx-auto font-extrabold text-3xl md:text-5xl pt-5" ><center>ISO Bunker Fuel Specification Checker</center></div> 
+		<div className="mx-auto font-extrabold text-3xl md:text-5xl pt-5" ><center>ISO Bunker Fuel Specification</center></div> 
     <div className='mx-auto'  style={{maxWidth: 1120, paddingTop: 30}}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <Tabs  value={value} onChange={handleChange} aria-label="lab API tabs example">
@@ -99,7 +99,7 @@ export default function SpecChecker() {
         <TabPanel value={value} index={1}>
             <SpecTable />
         </TabPanel>
-      <Fab color="primary" size="small"  aria-label="add" sx={{position:'absolute', right: '2%', top: '2%'}} onClick={colorMode.toggleColorMode} >
+      <Fab color="primary" size="small"  aria-label="add" sx={{position:'absolute', right: '2%', top: '6%'}} onClick={colorMode.toggleColorMode} >
         {theme.palette.mode === 'dark' ? <Brightness7 /> : <Brightness4 />}
       </Fab>
     </div>

@@ -19,7 +19,9 @@ import sitemap from "@astrojs/sitemap";
 import image from "@astrojs/image";
 
 // https://astro.build/config
+
+// https://astro.build/config
 export default defineConfig({
-  site: "https://blog.nptn.io",
-  integrations: [tailwind(), alpinejs(), mdx(), sitemap(), react(), image()]
+  site: "https://app.nptn.io",
+  integrations: [tailwind(), alpinejs(), mdx(), sitemap(), react(), image()],
 });
