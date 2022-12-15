@@ -37,12 +37,15 @@
     "astro-vscode": "^0.29.1",
     "postcss": "^8.4.19",
     "react": "^18.2.0",
+    "react-device-detect": "^2.2.2",
     "react-dom": "^18.2.0",
     "react-tabs": "^6.0.0",
     "rollup": "^3.7.0",
     "tailwindcss": "^3.0.24"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.7"
+    "@tailwindcss/typography": "^0.5.7",
+    "e": "^0.2.2",
+    "esbuild": "^0.16.7"
   }
 }

@@ -21,11 +21,10 @@ const menuitems = [
   //   title: "ISO 8217 Fuel Specification",
   //   path: "/spec-checker",
   // },
-  // {
-  //   title: "Inquiry Converter",
-  //   // path: "/inquiry-collector",
-  //   path: "https://n2orca.netlify.app",
-  // },
+  {
+    title: "Inquiry Converter",
+    path: "/inquiry-converter",
+  },
   {
     title: "Calendar",
     path: "/calendar",
@@ -96,7 +95,7 @@ const menuitems = [
                 <li>
                   <a
                     href={item.path}
-                    target="_blank"
+                    target="_self"
                     class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900">
                     {item.title}
                   </a>
