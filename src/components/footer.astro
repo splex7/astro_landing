@@ -3,22 +3,53 @@ const platform = "github";
 const username = "withastro";
 ---
 
-<footer class="h-20 my-20">
-  <p class="text-center text-sm text-slate-500">
-    Copyright © {new Date().getFullYear()} Neptune Cloud. All rights reserved.
-  </p>
+<!-- <footer class="h-20 my-20"></footer> -->
+<footer
+  class="w-full text-center border-t border-grey p-4 bg-black h-auto py-20">
+  <div class="flex justify-contents-center max-w-screen-lg">
+    <div class="md:flex align-item-center md:text-xs md:text-md">
+      <div class="flex-1 text-start pl-16 bg-blue-500">
+        <p class="text-slate-100 mt-1">
+          Company Registration Number: 404-87-02104
+        </p>
 
-  <p class="text-center text-xs text-slate-500 mt-1">
-    Part of <a
-      href="https://nptn.io"
-      target="_blank"
-      rel="noopener"
-      class="hover:underline">
-      nptn.io
-    </a>
-  </p>
-</footer>
-<!-- 
+        <p class="text-slate-100 mt-1">
+          Mail us:
+          <a
+            href="mailto:support@nptn.io?bcc=moon@nptn.io&subject=Hi There!&body=What you want to ask"
+            class="hover:underline">support@nptn.io</a
+          >
+        </p>
+      </div>
+      <div class="felx-1 text-start pl-16 bg-blue-400">
+        <p class="text-slate-100 mt-1">
+          Head Office: B 103 Instar 2, Convensia-daero, Yeonsu-gu, Incheon,
+          Republic of Korea
+        </p>
+        <p class="text-slate-100 mt-1">
+          Branch Office: 169, Yeoksam-ro, Gangnam-gu, Seoul, Republic of Korea
+        </p>
+      </div>
+    </div>
+
+    <!-- 
 <footer>
   <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
 </footer> -->
+  </div>
+  <div class="py-10">
+    <p class="text-center text-sm text-slate-100">
+      Copyright © {new Date().getFullYear()} Neptune Cloud. All rights reserved.
+    </p>
+
+    <p class="text-center text-xs text-slate-100 mt-1">
+      Part of <a
+        href="https://nptn.io"
+        target="_blank"
+        rel="noopener"
+        class="hover:underline">
+        nptn.io
+      </a>
+    </p>
+  </div>
+</footer>
