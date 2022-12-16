@@ -1,28 +1,19 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile
-} from "react-device-detect";
+import Converter from "@components/inquiry-converter/inquiryConverter";
 ---
 
-<Layout title="Inquiry Converter">
+<Layout title="Inquiry Converter"  >
   <center>
-    <BrowserView>
-      <iframe
-        src='https://n2orca.netlify.app'
-        width='1280' height='1200'>
-      </iframe>
+   
+    <Converter client:only="react">
+    <!-- <BrowserView client:only="react" >
+     
     </BrowserView>
-     <!-- <MobileView>
-    
-      <script>
-        console.log("redirecting to https://n2orca.netlify.app");
-        window.location.href = 'https://n2orca.netlify.app';
-      </script>
+     <MobileView client:only="react" >
+     
     </MobileView> -->
+  
       <!-- redirect to https://n2orca.netlify.app -->
   </center>
 </Layout>
