@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://app.nptn.io/sitemap.xml
+Sitemap: http://app.nptn.io/sitemap-0.xml
