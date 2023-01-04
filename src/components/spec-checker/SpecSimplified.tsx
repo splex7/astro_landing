@@ -45,7 +45,7 @@ export default function SpecSimplified() {
       <TabPanel value={ISOTab} index={0} >
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
               <Tabs value={TypeTab} onChange={handleChangeType} aria-label="Fuel Type tabs" variant="scrollable">
-                <Tab label="RMG380 (MGO)" {...a11yProps(0)}/>
+                <Tab label="RMG380 (for typical VSLFO spec)" {...a11yProps(0)}/>
                 <Tab label="RMG180" {...a11yProps(1)} />
                 <Tab label="RMG500" {...a11yProps(2)} />
                 <Tab label="RMG700" {...a11yProps(3)} />
@@ -74,7 +74,7 @@ export default function SpecSimplified() {
       <TabPanel value={ISOTab} index={1}  >
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
               <Tabs value={TypeTab} onChange={handleChangeType} aria-label="lab API tabs example" variant="scrollable">
-                <Tab label="RMG380 (MGO)" {...a11yProps(0)}/>
+                <Tab label="RMG380 (for typical VSLFO spec)" {...a11yProps(0)}/>
                 <Tab label="RMG180" {...a11yProps(1)} />
                 <Tab label="RMG500" {...a11yProps(2)} />
                 <Tab label="RMG700" {...a11yProps(3)} />
@@ -103,7 +103,7 @@ export default function SpecSimplified() {
       <TabPanel value={ISOTab} index={2} >
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <Tabs value={TypeTab} onChange={handleChangeType} aria-label="Fuel Type tabs" variant="scrollable">
-            <Tab label="RMG380 (MGO)" {...a11yProps(0)}/>
+            <Tab label="RMG380 (for typical VSLFO spec)" {...a11yProps(0)}/>
             <Tab label="RMG180" {...a11yProps(1)} />
             <Tab label="RMG500" {...a11yProps(2)} />
             <Tab label="RMG700" {...a11yProps(3)} />
@@ -131,7 +131,7 @@ export default function SpecSimplified() {
       <TabPanel value={ISOTab} index={3} >
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
               <Tabs value={TypeTab} onChange={handleChangeType} aria-label="Fuel type tabs" variant="scrollable">
-                <Tab label="RMG380 (MGO)" {...a11yProps(0)} />
+                <Tab label="RMG380 (for typical VSLFO spec)" {...a11yProps(0)} />
                 <Tab label="RMH380" {...a11yProps(1)} />
                 <Tab label="RMK380" {...a11yProps(2)} />
                 <Tab label="RMH700" {...a11yProps(3)} />
@@ -167,7 +167,7 @@ export default function SpecSimplified() {
         <TabPanel value={ISOTab} index={0} >
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={TypeTab} onChange={handleChangeType} aria-label="Fuel Type tabs" variant="scrollable">
-              <Tab label="DMA (LSFO)" {...a11yProps(0)} />
+              <Tab label="DMA (for typical MGO, LSMGO spec)" {...a11yProps(0)} />
               <Tab label="DMX" {...a11yProps(1)} />
               <Tab label="DFA" {...a11yProps(2)} />
               <Tab label="DMZ" {...a11yProps(3)} />
@@ -187,7 +187,7 @@ export default function SpecSimplified() {
         <TabPanel value={ISOTab} index={1}  >
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={TypeTab} onChange={handleChangeType} aria-label="Fuel Type tabs" variant="scrollable">
-              <Tab label="DMA (LSFO)" {...a11yProps(0)} />
+              <Tab label="DMA (for typical MGO, LSMGO spec)" {...a11yProps(0)} />
               <Tab label="DMX" {...a11yProps(1)} />
               <Tab label="DMZ" {...a11yProps(2)} />
               <Tab label="DMB" {...a11yProps(3)} />
@@ -201,7 +201,7 @@ export default function SpecSimplified() {
         <TabPanel value={ISOTab} index={2}  >
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={TypeTab} onChange={handleChangeType} aria-label="Fuel Type tabs" variant="scrollable">
-              <Tab label="DMA (LSFO)" {...a11yProps(0)} />
+              <Tab label="DMA (for typical MGO, LSMGO spec)" {...a11yProps(0)} />
               <Tab label="DMX" {...a11yProps(1)} />
               <Tab label="DMZ" {...a11yProps(2)} />
               <Tab label="DMB" {...a11yProps(3)} />
@@ -215,7 +215,7 @@ export default function SpecSimplified() {
         <TabPanel value={ISOTab} index={3} >
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={TypeTab} onChange={handleChangeType} aria-label="Fuel Type tabs" variant="scrollable">
-              <Tab label="DMA (LSFO)" {...a11yProps(0)} />
+              <Tab label="DMA (for typical MGO, LSMGO spec)" {...a11yProps(0)} />
               <Tab label="DMX" {...a11yProps(1)} />
               <Tab label="DMZ" {...a11yProps(2)} />
               <Tab label="DMB" {...a11yProps(3)} />
